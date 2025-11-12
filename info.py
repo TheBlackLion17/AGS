@@ -24,6 +24,8 @@ CACHE_TIME = int(environ.get('CACHE_TIME', 1000))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 PICS = (environ.get('PICS', 'https://files.catbox.moe/qnnmpa.jpg https://files.catbox.moe/2ab4tp.jpg https://files.catbox.moe/3trsd2.jpg')).split()
 
+RESTART_INTERVAL = environ.get("RESTART_INTERVAL", "3d")
+
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7705748477').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002398459249').split()]
