@@ -38,6 +38,8 @@ AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 FORCE_SUB1 = environ.get('FORCE_SUB1', 'https://t.me/Movies_Hub_OG')
 FORCE_SUB2 = environ.get('FORCE_SUB2', 'https://t.me/+A9AvnxcFRNQ5Njc1')
 REQUEST_FSUB_MODE = bool(environ.get('REQUEST_FSUB_MODE', True))
+
+FILE_CHANNELS = [int(ch) for ch in environ.get('FILE_CHANNELS', '-1003211195934').split()]
 FILE_CHANNEL_SENDING_MODE = is_enabled(environ.get('FILE_CHANNEL_SENDING_MODE', 'False'), False)
 FILE_AUTO_DELETE_SECONDS = int(environ.get('FILE_AUTO_DELETE_SECONDS', 3600))
 
