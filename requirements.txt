@@ -8,6 +8,6 @@ umongo==3.0.1
 requests
 bs4
 aiohttp
-asyncio
+asyncio==4.0.0
 pytz
 psutil==5.9.4
