@@ -39,6 +39,7 @@ FORCE_SUB1 = environ.get('FORCE_SUB1', 'https://t.me/Movies_Hub_OG')
 FORCE_SUB2 = environ.get('FORCE_SUB2', 'https://t.me/+A9AvnxcFRNQ5Njc1')
 REQUEST_FSUB_MODE = bool(environ.get('REQUEST_FSUB_MODE', True))
 FILE_CHANNEL_SENDING_MODE = is_enabled(environ.get('FILE_CHANNEL_SENDING_MODE', 'False'), False)
+FILE_AUTO_DELETE_SECONDS = int(environ.get('FILE_AUTO_DELETE_SECONDS', 3600))
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://akku:akku@cluster0.7smnpac.mongodb.net/?appName=Cluster0")
